@@ -28,7 +28,8 @@ public class Item {
     @Column(name="estimated_quantity")
     private int estimatedQuantity;
 
-    @Column(name="actual_quantity")
+    @Column(name="actual_quantity", nullable=true)
+
     private int actualQuantity;
 
     public Item(String customer, String site, int year, int month, String wasteType, int estimatedQuantity, int actualQuantity) {
