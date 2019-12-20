@@ -1,29 +1,46 @@
 <template>
 <div>
  <h1>PODFather App</h1>
-    <item-table id="item-list" :items="items"></item-table>
+    <item-filter></item-filter>
+    <item-table id="item-list" :items="filteredItems"></item-table>
   </div>
 </template>
 
 <script>
 import ItemTable from './assets/components/ItemTable'
 import ItemFilter from './assets/components/ItemFilter'
+import { eventBus } from './main';
 
 export default {
   name: 'app',
   data(){
     return{
-      items: []
+      items: [],
+      searchTerm: ""
     }
   },
   components: {
-    "item-table": ItemTable
+    "item-table": ItemTable,
+    "item-filter": ItemFilter
+
+  },
+  computed: {
+    filteredItems: function () {
+      if (!this.searchTerm.length) return this.items;
+      return this.items
+      .filter(item => item.customer.toLowerCase()
+      .includes(this.searchTerm.toLowerCase()));
+    }
   },
   mounted(){
     fetch('http://localhost:8080/items')
     .then(res => res.json())
     .then(items => this.items = items._embedded.items);
-  }
+
+    eventBus.$on('item-search', searchTerm => this.searchTerm = searchTerm)
+  },
+   
+
 }
 </script>
 
