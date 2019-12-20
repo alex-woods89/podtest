@@ -1,5 +1,5 @@
-<template>
-<div>
+<template >
+<div align="center">
  <h1>PODFather App</h1>
     <item-filter></item-filter>
     <item-table id="item-list" :items="filteredItems"></item-table>
@@ -48,6 +48,7 @@ export default {
 
 <style>
 #app {
+  
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
