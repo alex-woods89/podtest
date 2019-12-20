@@ -41,19 +41,3 @@ public class SpringGlobalConfig implements RepositoryRestConfigurer, WebMvcConfi
 
 }
 
-@Configuration
-@EnableConfigurationProperties
-public class PaginationConfiguration extends SpringDataWebConfiguration {
-
-    @Bean
-    public PageableHandlerMethodArgumentResolver pageableResolver() {
-        PageableHandlerMethodArgumentResolver pageableHandlerMethodArgumentResolver =
-                new PageableHandlerMethodArgumentResolver(sortResolver());
-
-        pageableHandlerMethodArgumentResolver.setMaxPageSize(Integer.MAX_VALUE);
-
-        return pageableHandlerMethodArgumentResolver;
-    }
-
-}
-

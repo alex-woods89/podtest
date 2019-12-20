@@ -11,6 +11,8 @@ import ItemTable from './assets/components/ItemTable'
 import ItemFilter from './assets/components/ItemFilter'
 import { eventBus } from './main';
 
+
+
 export default {
   name: 'app',
   data(){
@@ -33,7 +35,7 @@ export default {
     }
   },
   mounted(){
-    fetch('http://localhost:8080/items')
+    fetch('http://localhost:8080/items?page=0&size=41')
     .then(res => res.json())
     .then(items => this.items = items._embedded.items);
 
