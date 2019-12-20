@@ -1,8 +1,8 @@
 <template >
 <div align="center">
  <h1>PODFather App</h1>
-    <item-filter></item-filter>
-    <item-table id="item-list" :items="filteredItems"></item-table>
+    <item-filter class="form-control"></item-filter>
+    <item-table class="table" id="item-list" :items="filteredItems"></item-table>
   </div>
 </template>
 
@@ -10,6 +10,10 @@
 import ItemTable from './assets/components/ItemTable'
 import ItemFilter from './assets/components/ItemFilter'
 import { eventBus } from './main';
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 

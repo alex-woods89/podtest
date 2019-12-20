@@ -3,13 +3,13 @@
     <h3>Item Table</h3>
 <table>
   <tr>
-    <th>customer</th>
-    <th>site</th>
-    <th>year</th>
-    <th>month</th>
-    <th>waste type</th>
-    <th>estimated quantity</th>
-    <th>actual quantity</th>
+    <th>Customer</th>
+    <th>Site</th>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Waste Type</th>
+    <th>Estimated Quantity</th>
+    <th>Actual Quantity</th>
 
   </tr>
    
