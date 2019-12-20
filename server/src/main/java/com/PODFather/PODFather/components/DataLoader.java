@@ -79,6 +79,67 @@ public class DataLoader implements ApplicationRunner {
         Item item21 = new Item("Sim City Council", 	"Mega Depot",	2018,	6,	"Mixed",	536,	134);
         itemRepository.save(item21);
 
+        Item item22 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	6,	"Food Waste",	181,	596);
+        itemRepository.save(item22);
+
+        Item item23 =  new Item("Acme Waste",	"Left Over City",	2019,	7,	"Sewage",	527,	500);
+        itemRepository.save(item23);
+
+        Item item24 = new Item("Acme Waste",	"Left Over Farm",	2019,	7,	"Agriculture",	555,	111);
+        itemRepository.save(item24);
+
+        Item item25 = new Item("Sim City Council", 	"Mega Depot",	2018,	7,	"Mixed",	105,	539);
+        itemRepository.save(item25);
+
+        Item item26 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	7,	"Food Waste",	568,	226);
+        itemRepository.save(item26);
+
+        Item item27 = new Item("Acme Waste",	"Left Over City",	2019,	8,	"Sewage",	238,	226);
+        itemRepository.save(item27);
+
+        Item item28 = new Item("Acme Waste",	"Left Over Farm",	2019,	8,	"Agriculture",	215,	135);
+        itemRepository.save(item28);
+
+        Item item29 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	8,	"Food Waste",	201,	111);
+        itemRepository.save(item29);
+
+        Item item30 = new Item("Acme Waste",	"Left Over City",	2019,	9,	"Sewage",	585,	111);
+        itemRepository.save(item30);
+
+        Item item31 = new Item("Acme Waste",	"Left Over Farm",	2019,	9,	"Agriculture",	114,	231);
+        itemRepository.save(item31);
+
+        Item item32 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	9,	"Food Waste",	111,	135);
+        itemRepository.save(item32);
+
+        Item item33 = new Item("Acme Waste",	"Left Over City",	2019,	10,	"Sewage",	125,	135);
+        itemRepository.save(item33);
+
+        Item item34 = new Item("Acme Waste",	"Left Over Farm",	2019,	10,	"Agriculture",	140,	536);
+        itemRepository.save(item34);
+
+        Item item35 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	10,	"Food Waste",	135,	231);
+        itemRepository.save(item35);
+
+        Item item36 = new Item("Acme Waste",	"Left Over City",	2019,	11,	"Sewage",	150,	231);
+        itemRepository.save(item36);
+
+        Item item37 = new Item("Acme Waste",	"Left Over Farm",	2019,	11,	"Agriculture",	160, 0	);
+        itemRepository.save(item37);
+
+        Item item38 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	11,	"Food Waste",	231,	536);
+        itemRepository.save(item38);
+
+        Item item39 = new Item("Acme Waste",	"Left Over City",	2019,	12,	"Sewage",	569,	536);
+        itemRepository.save(item39);
+
+        Item item40 = new Item("Acme Waste",	"Left Over Farm",	2019,	12,	"Agriculture",	528,	536);
+        itemRepository.save(item40);
+
+        Item item41 = new Item("Acme's Recycling",	"Acme Compost Silo",	2019,	12,	"Food Waste",	536,	494);
+        itemRepository.save(item41);
+
+
 
 
 
